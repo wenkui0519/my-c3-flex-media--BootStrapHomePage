@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap中文网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="./css/pad.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="./css/phone.css"> -->
+    <style>
+        /* 
+        1200+ content 4
+        1000-1200 content 3
+        750-1000 content 2  nav关于display
+        750- content 1 nav
+        */
+        @media screen and (max-width: 1200px){
+            .container {
+                width: 970px;
+                margin: 0 auto;
+            }
+            .content-main .row .col{
+                flex: 1 1 30%;
+            }
+        }
+        @media screen and (max-width: 992px){
+            .container {
+                width: 750px;
+                margin: 0 auto;
+            }
+            .content-main .row .col{
+                flex: 1 1 40%;
+            }
+        }
+        @media screen and (max-width: 760px){
+            :root,body{
+                font-size: 25px;
+            }
+            .container {
+                width: 90%;
+                margin: 0 auto;
+            }
+            nav {
+                height: 100px;
+            }
+            .nav-header a {
+                height: 100px;
+                line-height: 100px;
+                padding: 15px 15px;
+                font-size: 1.5rem;
+                color: #9d9d9d;
+            }
+            .nav-main{
+                display: none;
+            }
+            .about .container h1 {
+                font-size: 6rem;
+                font-weight: 700;
+                color: white;
+            }
+            .about .container p a {
+                font-size: 2rem;
+                border-radius: 30px;
+            }
+            .about .container span{
+                margin-top: 1.2rem;
+                display: block;
+            }
+            .about .container span a {
+                font-size: 1.4rem;
+            }
+            .content-header h2 {
+                font-size: 3.2rem;
+            }
+            .content-header p{
+                font-size: 1.5rem;
+            }
+            .content-main .row .col{
+                flex: 1 1 60%;
+            }
+            .content-main .row .col .col-child {
+                height: 1000px;
+                text-align: center;
+            }
+            .content-main .row .col .caption h3 a {
+                font-size: 3rem;
+            }
+            .content-main .row .col img {
+                width: 95%;
+            }
+            .content-main .row .col .caption p {
+                font-size: 1.4rem;
+                padding: 0 14px;
+            }
+            .content-main .row .col .caption {
+                margin-bottom: 6.57rem;
+                margin-top: 2rem;
+            }
+            .about .container h2{
+                background-color: transparent;
+                color: white;
+            }
+            .content-main .row .col {
+                margin-bottom: 2.14rem;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="container">
+            <div class="nav-header">
+                <button></button>
+                <a href="#">Bootstrap中文网</a>
+            </div>
+            <div class="nav-main">
+                <ul class="nav-main-content nav-left">
+                    <li>BootStrasp2中文文档</li>
+                    <li>BootStrasp3中文文档</li>
+                    <li>BootStrasp4中文文档</li>
+                    <li>Less教程</li>
+                    <li>jQueryAPI</li>
+                    <li>网站实例</li>
+                </ul>
+                <ul class="nav-main-content nav-right">
+                    <li>关于</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="about">
+        <div class="container">
+            <h1>Bootstrap</h1>
+            <h2>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</h2>
+            <p>
+                <a href="#">Bootstrap3中文文档(v3.3.7)</a>
+            </p>
+            <span>
+                <a href="#">Bootstrap2中文文档(v2.3.2)</a>
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="content-header">
+                <h2>
+                        Bootstrap相关优质项目推荐
+                </h2>
+                <p>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的。</p>
+            </div>
+            <div class="content-main">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-child">
+                            <a href="#">
+                                <img src="./img/expo.png" alt="">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#">
+                                        优站精选
+                                        <small>
+                                            Bootstrap 网站实例
+                                        </small>
+                                    </a>
+                                </h3>
+                                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>

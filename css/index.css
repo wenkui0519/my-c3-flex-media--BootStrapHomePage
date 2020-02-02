@@ -1,0 +1,152 @@
+:root,body{
+    font-size: 14px;
+}
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color:yellow; */
+}
+/* nav */
+nav{
+    height: 42px;
+    background-color: #101010;
+    border-bottom:1px solid black ;
+}
+nav .container {
+    height: 42px;
+}
+nav .container .nav-header{
+    height: 42px;
+    float: left;
+}
+.nav-header a{
+    height: 42px;
+    line-height: 42px;
+    padding: 15px 15px;
+    font-size: 1.28rem;
+    color: #9d9d9d;
+}
+nav .nav-header button{
+    display: none;
+}
+nav .nav-main .nav-main-content li{
+    width: auto;
+    float: left;
+    height: 42px;
+    line-height: 43px;
+    padding: 0 15px;
+    color: #9d9d9d;
+}
+nav .nav-main .nav-left{
+    float: left;
+}
+nav .nav-main .nav-right{
+    float: right;
+}
+/* nav end*/
+.about{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(45deg,#020031,#6d3353);
+    padding: 90px 0 110px;
+}
+.about::after{
+    position: absolute;
+    content: '';
+    display: block;top: 0;left: 0;right: 0;bottom: 0;
+    background-image: url(../img/bs-docs-masthead-pattern.png);
+    opacity: .4;
+    z-index: -1;
+}
+.about .container h1{
+    font-size: 7.14rem;
+    font-weight: 700;
+    color: white;
+}
+.about .container h2{
+    font-size: 2.14rem;
+    font-weight: 200;
+    color: black;
+    background-color: rgba(204, 204, 204, .4);
+}
+.about .container p{
+    font-size: 2.85rem;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+.about .container p a{
+    padding: 13px 35px 17px;
+    font-size: 1.28rem;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(47, 117, 246);
+}
+.about .container p a:hover{
+    background-color: rgb(0, 87, 250);
+}
+.about .container span a{
+    padding-top: 1.42rem;
+    color: #ccc;
+}
+.about .container span a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/*  */
+.content-header{
+    width: 60%;
+    text-align: center;
+    font-weight: 200;
+    display: block;
+    margin: 60px auto 40px;
+}
+.content-header h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.content-main .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content-main .row .col{
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    padding: 0 15px;
+    margin-bottom: 30px ;
+}
+.content-main .row .col .col-child{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 0 4px;
+} 
+.content-main .row .col img{
+    width: 100%;
+}
+.content-main .row .col .caption{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content-main .row .col .caption h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.content-main .row .col .caption h3 a{
+    font-size: 1.71rem;
+    font-weight: 500;
+    color: #337ab7;
+}
+.content-main .row .col .caption h3 small{
+    display: block;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1;
+    color: #777;
+}
+.content-main .row .col .caption p{
+    font-size: 0.92rem;
+}
